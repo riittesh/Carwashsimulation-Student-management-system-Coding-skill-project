@@ -1,46 +1,150 @@
-🚗 Car Washing Simulation Using Stack (Python)
+# Student Management System - Admin Portal
 
-This project is a simple console-based simulation that demonstrates how a Stack (LIFO) data structure works in a real-life scenario of a car wash line. Cars are added to the line using push, and washed and removed using pop operations.
+A modern web-based **Student Management System (Admin Portal)** built using **React (Vite + TypeScript)** and **Supabase** for backend database management. This system enables administrators to manage student records, departments, marks, attendance, and notices through a clean and responsive dashboard.
 
-📌 Features
+---
 
-Add a car to the waiting line
+## 📌 Overview
 
-Wash/remove the last car added
+This project is focused on digitizing university administration tasks and eliminating manual paperwork by providing a centralized platform for student academic data management. It includes CRUD features, modular components, and real-time database access using Supabase.
 
-Display current cars in the line
+---
 
-Capacity handling (Full / Empty messages)
+## ✨ Features
 
-Easy menu-based interaction
+* Dashboard with system summary
+* Add / Edit / Delete / View student details (CRUD)
+* Search and filter students
+* Manage academic departments and courses
+* Marks & Attendance management
+* Notice board management
+* Fully responsive UI using Tailwind CSS
+* Type-safe development with TypeScript
 
-🧠 Concepts Used
+---
 
-Stack Data Structure
+## 🛠 Tech Stack
 
-LIFO (Last-In First-Out)
+| Layer              | Technology                      |
+| ------------------ | ------------------------------- |
+| Frontend           | React, Vite, TypeScript         |
+| Styling            | Tailwind CSS                    |
+| Backend / Database | Supabase (PostgreSQL + Storage) |
+| Tools              | Git, GitHub, VS Code, npm       |
 
-Python list implementation
+---
 
-▶️ How to Run
-python car_wash_simulation.py
+## 📁 Project Structure
 
-📂 Project Structure
-car_wash_simulation.py  # Main source file
-README.md               # Documentation
+```
+student-management-system/
+│── node_modules/
+│── supabase/
+│   └── migrations/
+│── src/
+│   ├── components/
+│   ├── lib/
+│   ├── pages/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│── .env
+│── index.html
+│── package.json
+│── vite.config.ts
+│── tsconfig.json
+│── tailwind.config.js
+```
 
-🎯 Purpose
+---
 
-Helps beginners understand stack operations in a practical, real-world like simulation.
+## ⚙️ Installation & Setup
 
-🔮 Future Enhancements
+### 1️⃣ Clone the repository
 
-Add wash timer simulation
+```
+git clone https://github.com/your-username/student-management-system.git
+```
 
-VIP priority lanes
+### 2️⃣ Navigate to directory
 
-GUI interface (Tkinter)
+```
+cd student-management-system
+```
 
-📄 License
+### 3️⃣ Install dependencies
 
-Open-source – free to use for learning and academic purposes.
+```
+npm install
+```
+
+### 4️⃣ Setup Supabase Environment Variables
+
+Create `.env` file:
+
+```
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-anon-key
+```
+
+### 5️⃣ Start development server
+
+```
+npm run dev
+```
+
+Open: `http://localhost:5173`
+
+---
+
+## 🧠 Database Structure (Supabase Tables)
+
+| Table       | Description                      |
+| ----------- | -------------------------------- |
+| students    | Student personal & academic info |
+| departments | Department list                  |
+| courses     | Courses mapped to departments    |
+| marks       | Internal and external marks      |
+| attendance  | Presence status                  |
+| notices     | University announcement board    |
+
+---
+
+## 📸 Screenshots (To be updated)
+
+```
+/ screenshots/dashboard.png
+/ screenshots/student-list.png
+/ screenshots/add-student.png
+```
+
+---
+
+## 🔮 Future Enhancements
+
+* Student / Faculty Login System
+* Automated Notifications & Email alerts
+* Fee Payment & Invoice Module
+* Report generation (PDF / Excel)
+* Deployment on Vercel + Supabase
+* AI-based query assistant
+
+---
+
+## 👨‍💻 Author
+
+**Mihirkant Pradhan**
+B.Tech CSE, SRM University
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, create an issue first to propose modifications.
+
+---
+
+## 📝 License
+
+This project is open-source and available under the **MIT License**.
+
+---
